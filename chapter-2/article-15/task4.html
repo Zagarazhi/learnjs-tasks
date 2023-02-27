@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function pow(x, n) {
+                let result = x;
+                for (let i = 1; i < n; i++) {
+                    result *= x;
+                }
+                return result;
+            }
+
+            const x = +prompt('Введите число x');
+            const n = +prompt('Введите степень n');
+            alert('Результат: ' + pow(x, n));
+        </script>
+    </body>
+</html>

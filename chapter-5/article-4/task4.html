@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function sumInput() {
+                let arr = [];
+                let sum = 0;
+                while(true) {
+                    let userInput = prompt('Введите значение', 0);
+                    if (userInput === "" || userInput === null || !isFinite(userInput)) break;
+                    arr.push(+userInput);
+                }
+                for(let number of arr) {
+                    sum += number;
+                }
+                return sum;
+            }
+
+            alert(sumInput())
+        </script>
+    </body>
+</html>
